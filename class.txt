@@ -1,5 +1,0 @@
-thumbsup
-thumbsdown
-fingerleft
-fingerdown
-ok

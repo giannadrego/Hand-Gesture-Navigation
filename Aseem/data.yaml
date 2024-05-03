@@ -1,6 +1,0 @@
-train: ../train/images
-val: ../test/images
-
-nc: 11
-names: ['fingerup','fingerdown','thumbsup','thumbsdown','fingerleft','fingerright','ok','closedfist','peace sign','rockon sign','L']
-

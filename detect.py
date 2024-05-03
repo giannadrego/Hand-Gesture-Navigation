@@ -201,36 +201,48 @@ def run(
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
 
                 # Write results
+                count=1
                 for *xyxy, conf, cls in reversed(det):
                     c = int(cls)  # integer class
                     label = names[c] if hide_conf else f"{names[c]}"
                     #LOGGER.info("Hello",label)
-                    if (c == 0):
-            
-                        pyautogui.press('up')
-                    if (c == 1):
-                        pyautogui.press('down')
-                    if (c == 2):
-                        #pyautogui.press('f11')
-                        pass
-                    if (c == 3):
-                        #pyautogui.press('f12')
-                        pass
-                    if (c == 4):
-                        pyautogui.press('left')
-                    if (c == 5):
-                        pyautogui.press('right')
-                    if (c == 6):
-                        pyautogui.press('space')
-                        time.sleep(2)
-                    if (c == 7):
-                        pyautogui.press('space')
-                        time.sleep(2)
-                    if (c == 8):
-                        pyautogui.press('f')
-                        time.sleep(2)
-                    if (c == 9):
-                        pass
+                    
+                    
+                    if (count==1):
+                        if (c == 0):
+                
+                            pyautogui.press('up') #FIngerup
+                            time.sleep
+                        if (c == 1):
+                            pyautogui.press('down') #FIngerdown
+                            time.sleep
+                        if (c == 2):
+                           #pyautogui.press('volumeup') #Thumbsup
+                            pass
+                        if (c == 3):
+                            #pyautogui.press('volumedown')#Thumbsdown
+                            pass
+                        if (c == 4):
+                            pyautogui.press('left') #Fingerleft
+                            time.sleep(1)
+                        if (c == 5):
+                            pyautogui.press('right') #Fingerright
+                            time.sleep(1)
+                        if (c == 6):
+                            pyautogui.press('space') #ok
+                            time.sleep(2)
+                        if (c == 7):  #closedfit
+                            pass
+                        if (c == 8):
+                            pyautogui.press('f')  #peace sign
+                            time.sleep(2)
+                        if (c == 9):
+                            pyautogui.press('escape') #rocksign
+                            time.sleep(1)
+                        if (c ==10):
+                            pyautogui.press('f5') #L sign
+                            time.sleep(1)
+                        
                     
                         
                     confidence = float(conf)
